@@ -13,7 +13,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        // $this->middleware('auth');
     }
 
     /**
@@ -24,5 +24,17 @@ class HomeController extends Controller
     public function index()
     {
         return view('home');
+    }
+    public function language(String $locale)
+    {
+        $locale = in_array($locale, config('app.locales')) ? $locale : config('app.fallback_locale');
+
+        session(['locale' => $locale]);
+
+        return back();
+    }
+    public function admin()
+    {
+        return view('admin\articles\create');
     }
 }

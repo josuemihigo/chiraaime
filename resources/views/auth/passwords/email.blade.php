@@ -1,10 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
+        <div class="middle-box text-center loginscreen animated fadeInDown">
+                <div>
+
+                    <h1 class="logo-name">IN+</h1>
+
+                </div>
+                <h3>Welcome to IN+</h3>
                 <div class="card-header">{{ __('Reset Password') }}</div>
 
                 <div class="card-body">
@@ -18,9 +21,8 @@
                         @csrf
 
                         <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-
-                            <div class="col-md-6">
+                            <label for="email" class="col-md-12 col-form-label text-md-left">{{ __('E-Mail Address') }}</label>
+                            <div class="col-md-12">
                                 <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email" autofocus>
 
                                 @error('email')

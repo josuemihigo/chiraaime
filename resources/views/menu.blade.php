@@ -1,241 +1,235 @@
-<!-- Top Navbar -->
-<nav class="navbar navbar-expand-xl navbar-light fixed-top hk-navbar">
+<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav metismenu" id="side-menu">
+            <li class="nav-header">
+                <div class="dropdown profile-element">
+                    <img alt="image" class="rounded-circle" src="img/profile_small.jpg"/>
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        <span class="block m-t-xs font-bold">David Williams</span>
+                        <span class="text-muted text-xs block">Art Director <b class="caret"></b></span>
+                    </a>
+                    <ul class="dropdown-menu animated fadeInRight m-t-xs">
+                        <li><a class="dropdown-item" href="profile.html">Profile</a></li>
+                        <li><a class="dropdown-item" href="contacts.html">Contacts</a></li>
+                        <li><a class="dropdown-item" href="mailbox.html">Mailbox</a></li>
+                        <li class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                    </ul>
+                </div>
+                <div class="logo-element">
+                    IN+
+                </div>
+            </li>
+            <li>
+                <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Dashboards</span> <span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="index.html">Dashboard v.1</a></li>
+                    <li><a href="dashboard_2.html">Dashboard v.2</a></li>
+                    <li><a href="dashboard_3.html">Dashboard v.3</a></li>
+                    <li><a href="dashboard_4_1.html">Dashboard v.4</a></li>
+                    <li><a href="dashboard_5.html">Dashboard v.5 </a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="layouts.html"><i class="fa fa-diamond"></i> <span class="nav-label">Layouts</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-bar-chart-o"></i> <span class="nav-label">Graphs</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="graph_flot.html">Flot Charts</a></li>
+                    <li><a href="graph_morris.html">Morris.js Charts</a></li>
+                    <li><a href="graph_rickshaw.html">Rickshaw Charts</a></li>
+                    <li><a href="graph_chartjs.html">Chart.js</a></li>
+                    <li><a href="graph_chartist.html">Chartist</a></li>
+                    <li><a href="c3.html">c3 charts</a></li>
+                    <li><a href="graph_peity.html">Peity Charts</a></li>
+                    <li><a href="graph_sparkline.html">Sparkline Charts</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="mailbox.html"><i class="fa fa-envelope"></i> <span class="nav-label">Mailbox </span><span class="label label-warning float-right">16/24</span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="mailbox.html">Inbox</a></li>
+                    <li><a href="mail_detail.html">Email view</a></li>
+                    <li><a href="mail_compose.html">Compose email</a></li>
+                    <li><a href="email_template.html">Email templates</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="metrics.html"><i class="fa fa-pie-chart"></i> <span class="nav-label">Metrics</span>  </a>
+            </li>
+            <li>
+                <a href="widgets.html"><i class="fa fa-flask"></i> <span class="nav-label">Widgets</span></a>
+            </li>
+            <li class="active">
+                <a href="#"><i class="fa fa-edit"></i> <span class="nav-label">Forms</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li class="active"><a href="form_basic.html">Basic form</a></li>
+                    <li><a href="form_advanced.html">Advanced Plugins</a></li>
+                    <li><a href="form_wizard.html">Wizard</a></li>
+                    <li><a href="form_file_upload.html">File Upload</a></li>
+                    <li><a href="form_editors.html">Text Editor</a></li>
+                    <li><a href="form_autocomplete.html">Autocomplete</a></li>
+                    <li><a href="form_markdown.html">Markdown</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-desktop"></i> <span class="nav-label">App Views</span>  <span class="float-right label label-primary">SPECIAL</span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="contacts.html">Contacts</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="profile_2.html">Profile v.2</a></li>
+                    <li><a href="contacts_2.html">Contacts v.2</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="project_detail.html">Project detail</a></li>
+                    <li><a href="activity_stream.html">Activity stream</a></li>
+                    <li><a href="teams_board.html">Teams board</a></li>
+                    <li><a href="social_feed.html">Social feed</a></li>
+                    <li><a href="clients.html">Clients</a></li>
+                    <li><a href="full_height.html">Outlook view</a></li>
+                    <li><a href="vote_list.html">Vote list</a></li>
+                    <li><a href="file_manager.html">File manager</a></li>
+                    <li><a href="calendar.html">Calendar</a></li>
+                    <li><a href="issue_tracker.html">Issue tracker</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="article.html">Article</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="timeline.html">Timeline</a></li>
+                    <li><a href="pin_board.html">Pin board</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-files-o"></i> <span class="nav-label">Other Pages</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="search_results.html">Search results</a></li>
+                    <li><a href="lockscreen.html">Lockscreen</a></li>
+                    <li><a href="invoice.html">Invoice</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="login_two_columns.html">Login v.2</a></li>
+                    <li><a href="forgot_password.html">Forget password</a></li>
+                    <li><a href="register.html">Register</a></li>
+                    <li><a href="404.html">404 Page</a></li>
+                    <li><a href="500.html">500 Page</a></li>
+                    <li><a href="empty_page.html">Empty page</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-globe"></i> <span class="nav-label">Miscellaneous</span><span class="label label-info float-right">NEW</span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="toastr_notifications.html">Notification</a></li>
+                    <li><a href="nestable_list.html">Nestable list</a></li>
+                    <li><a href="agile_board.html">Agile board</a></li>
+                    <li><a href="timeline_2.html">Timeline v.2</a></li>
+                    <li><a href="diff.html">Diff</a></li>
+                    <li><a href="pdf_viewer.html">PDF viewer</a></li>
+                    <li><a href="i18support.html">i18 support</a></li>
+                    <li><a href="sweetalert.html">Sweet alert</a></li>
+                    <li><a href="idle_timer.html">Idle timer</a></li>
+                    <li><a href="truncate.html">Truncate</a></li>
+                    <li><a href="password_meter.html">Password meter</a></li>
+                    <li><a href="spinners.html">Spinners</a></li>
+                    <li><a href="spinners_usage.html">Spinners usage</a></li>
+                    <li><a href="tinycon.html">Live favicon</a></li>
+                    <li><a href="google_maps.html">Google maps</a></li>
+                    <li><a href="datamaps.html">Datamaps</a></li>
+                    <li><a href="social_buttons.html">Social buttons</a></li>
+                    <li><a href="code_editor.html">Code editor</a></li>
+                    <li><a href="modal_window.html">Modal window</a></li>
+                    <li><a href="clipboard.html">Clipboard</a></li>
+                    <li><a href="text_spinners.html">Text spinners</a></li>
+                    <li><a href="forum_main.html">Forum view</a></li>
+                    <li><a href="validation.html">Validation</a></li>
+                    <li><a href="tree_view.html">Tree view</a></li>
+                    <li><a href="loading_buttons.html">Loading buttons</a></li>
+                    <li><a href="chat_view.html">Chat view</a></li>
+                    <li><a href="masonry.html">Masonry</a></li>
+                    <li><a href="tour.html">Tour</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-flask"></i> <span class="nav-label">UI Elements</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="typography.html">Typography</a></li>
+                    <li><a href="icons.html">Icons</a></li>
+                    <li><a href="draggable_panels.html">Draggable Panels</a></li> <li><a href="resizeable_panels.html">Resizeable Panels</a></li>
+                    <li><a href="buttons.html">Buttons</a></li>
+                    <li><a href="video.html">Video</a></li>
+                    <li><a href="tabs_panels.html">Panels</a></li>
+                    <li><a href="tabs.html">Tabs</a></li>
+                    <li><a href="notifications.html">Notifications & Tooltips</a></li>
+                    <li><a href="helper_classes.html">Helper css classes</a></li>
+                    <li><a href="badges_labels.html">Badges, Labels, Progress</a></li>
+                </ul>
+            </li>
 
-    <a class="navbar-brand font-weight-700" href="{{url('users')}}">
-        Pibasacademia <span class="text-warning">(Beta)</span>
-    </a>
-    <ul class="navbar-nav hk-navbar-content">
+            <li>
+                <a href="grid_options.html"><i class="fa fa-laptop"></i> <span class="nav-label">Grid options</span></a>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-table"></i> <span class="nav-label">Tables</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="table_basic.html">Static Tables</a></li>
+                    <li><a href="table_data_tables.html">Data Tables</a></li>
+                    <li><a href="table_foo_table.html">Foo Tables</a></li>
+                    <li><a href="jq_grid.html">jqGrid</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-shopping-cart"></i> <span class="nav-label">E-commerce</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="ecommerce_products_grid.html">Products grid</a></li>
+                    <li><a href="ecommerce_product_list.html">Products list</a></li>
+                    <li><a href="ecommerce_product.html">Product edit</a></li>
+                    <li><a href="ecommerce_product_detail.html">Product detail</a></li>
+                    <li><a href="ecommerce-cart.html">Cart</a></li>
+                    <li><a href="ecommerce-orders.html">Orders</a></li>
+                    <li><a href="ecommerce_payments.html">Credit Card form</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-picture-o"></i> <span class="nav-label">Gallery</span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li><a href="basic_gallery.html">Lightbox Gallery</a></li>
+                    <li><a href="slick_carousel.html">Slick Carousel</a></li>
+                    <li><a href="carousel.html">Bootstrap Carousel</a></li>
 
-        <li class="nav-item">
-            <a id="settings_toggle_btn" class="nav-link nav-link-hover" href="javascript:void(0);"><span
-                    class="feather-icon"><i data-feather="settings"></i></span></a>
-        </li>
-        <li class="nav-item dropdown dropdown-notifications">
-            <a class="nav-link dropdown-toggle no-caret" href="#" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false"><span class="feather-icon"><i
-                        data-feather="bell"></i></span><span class="badge-wrap"><span
-                        class="badge badge-primary badge-indicator badge-indicator-sm badge-pill pulse"></span></span></a>
-            <div class="dropdown-menu dropdown-menu-right" data-dropdown-in="fadeIn" data-dropdown-out="fadeOut">
-                <h6 class="dropdown-header">Notifications <a href="javascript:void(0);" class="">View all</a></h6>
-                <div class="notifications-nicescroll-bar">
-                    <a href="javascript:void(0);" class="dropdown-item">
-                        <div class="media">
-                            <div class="media-img-wrap">
-                                <div class="avatar avatar-sm">
-                                    <img src="{{asset('dist/img/avatar1.jpg')}}" alt=" user"
-                                        class="avatar-img rounded-circle">
-                                </div>
-                            </div>
-                            <div class="media-body">
-                                <div>
-                                    <div class="notifications-text"><span class="text-dark text-capitalize">Evie
-                                            Ono</span> accepted your invitation to join the team</div>
-                                    <div class="notifications-time">12m</div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a href="javascript:void(0);" class="dropdown-item">
-                        <div class="media">
-                            <div class="media-img-wrap">
-                                <div class="avatar avatar-sm">
-                                    <img src="{{asset('dist/img/avatar2.jpg')}}" alt=" user"
-                                        class="avatar-img rounded-circle">
-                                </div>
-                            </div>
-                            <div class="media-body">
-                                <div>
-                                    <div class="notifications-text">New message received from <span
-                                            class="text-dark text-capitalize">Misuko Heid</span></div>
-                                    <div class="notifications-time">1h</div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a href="javascript:void(0);" class="dropdown-item">
-                        <div class="media">
-                            <div class="media-img-wrap">
-                                <div class="avatar avatar-sm">
-                                    <span class="avatar-text avatar-text-primary rounded-circle">
-                                        <span class="initial-wrap"><span><i
-                                                    class="zmdi zmdi-account font-18"></i></span></span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="media-body">
-                                <div>
-                                    <div class="notifications-text">You have a follow up with<span
-                                            class="text-dark text-capitalize"> Marvin head</span> on <span
-                                            class="text-dark text-capitalize">friday, dec 19</span> at <span
-                                            class="text-dark">10.00 am</span></div>
-                                    <div class="notifications-time">2d</div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a href="javascript:void(0);" class="dropdown-item">
-                        <div class="media">
-                            <div class="media-img-wrap">
-                                <div class="avatar avatar-sm">
-                                    <span class="avatar-text avatar-text-success rounded-circle">
-                                        <span class="initial-wrap"><span>A</span></span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="media-body">
-                                <div>
-                                    <div class="notifications-text">Application of <span
-                                            class="text-dark text-capitalize">Sarah Williams</span> is waiting for your
-                                        approval</div>
-                                    <div class="notifications-time">1w</div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a href="javascript:void(0);" class="dropdown-item">
-                        <div class="media">
-                            <div class="media-img-wrap">
-                                <div class="avatar avatar-sm">
-                                    <span class="avatar-text avatar-text-warning rounded-circle">
-                                        <span class="initial-wrap"><span><i
-                                                    class="zmdi zmdi-notifications font-18"></i></span></span>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="media-body">
-                                <div>
-                                    <div class="notifications-text">Last 2 days left for the project</div>
-                                    <div class="notifications-time">15d</div>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </li>
-        <li class="nav-item dropdown dropdown-authentication">
-            <a class="nav-link dropdown-toggle no-caret" href="#" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                <div class="media">
-                    <div class="media-img-wrap">
-                        <div class="avatar">
-                            <img src="{{asset('dist/img/avatar12.jpg')}}" alt=" user" class="avatar-img rounded-circle">
-                        </div>
-                        <span class="badge badge-success badge-indicator"></span>
-                    </div>
-                    <div class="media-body">
-                        <span>{{ Auth::user()->name1.' '.Auth::user()->name2 }}<i
-                                class="zmdi zmdi-chevron-down"></i></span>
-                    </div>
-                </div>
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" data-dropdown-in="flipInX" data-dropdown-out="flipOutX">
-                {{-- <a class="dropdown-item" href="{{ url('/users/'.Auth::user()->id.'/edit') }}">
-                <i class="dropdown-icon zmdi zmdi-account"></i><span>{{ __('Profil') }}</span></a> --}}
-                <a class="dropdown-item" href="{{ url('users') }}"><i class="dropdown-icon zmdi zmdi-card"></i><span>
-                        Balance</span></a>
-                <a class="dropdown-item" href="{{ url('users/1/edit') }}"><i
-                        class="dropdown-icon zmdi zmdi-card"></i><span>
-                        Profil</span></a>
-                <a class="dropdown-item" href="{{ url('inbox') }}"><i
-                        class="dropdown-icon zmdi zmdi-email"></i><span>Inbox</span></a>
-                {{-- <a class="dropdown-item" href="setting"><i
-                        class="dropdown-icon zmdi zmdi-settings"></i><span>Settings</span></a> --}}
-                <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();"><i
-                        class="dropdown-icon zmdi zmdi-power text-danger"></i><span>{{ __('Deconnexion') }}</span></a>
-                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                    @csrf
-                </form>
-                <div class="dropdown-divider"></div>
-                {{-- <div class="sub-dropdown-menu show-on-hover">
-                    <a href="#" class="dropdown-toggle dropdown-item no-caret"><i
-                            class="zmdi zmdi-check text-success"></i>Online</a>
-                    <div class="dropdown-menu open-left-side">
-                        <a class="dropdown-item" href="#"><i
-                                class="dropdown-icon zmdi zmdi-check text-success"></i><span>Online</span></a>
-                        <a class="dropdown-item" href="#"><i
-                                class="dropdown-icon zmdi zmdi-circle-o text-warning"></i><span>Busy</span></a>
-                        <a class="dropdown-item" href="#"><i
-                                class="dropdown-icon zmdi zmdi-minus-circle-outline text-danger"></i><span>Offline</span></a>
-                    </div>
-                </div>
-                <div class="dropdown-divider"></div>
-                <i class="dropdown-icon zmdi zmdi-power"></i><span>Log in</span></a> --}}
-            </div>
-        </li>
-    </ul>
-</nav>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-sitemap"></i> <span class="nav-label">Menu Levels </span><span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level collapse">
+                    <li>
+                        <a href="#">Third Level <span class="fa arrow"></span></a>
+                        <ul class="nav nav-third-level">
+                            <li>
+                                <a href="#">Third Level Item</a>
+                            </li>
+                            <li>
+                                <a href="#">Third Level Item</a>
+                            </li>
+                            <li>
+                                <a href="#">Third Level Item</a>
+                            </li>
 
-<div class="hk-settings-panel">
-    <div class="nicescroll-bar position-relative">
-        <div class="settings-panel-wrap">
-            <div class="settings-panel-head">
-                <a href="javascript:void(0);" id="settings_panel_close" class="settings-panel-close"><span
-                        class="feather-icon"><i data-feather="x"></i></span></a>
-            </div>
-            <hr>
-            <h6 class="mb-5">Layout</h6>
-            <p class="font-14">Choose your preferred layout</p>
-            <div class="layout-img-wrap">
-                <div class="row">
-                    <a href="dashboard1.html" class="col-6 mb-30">
-                        <img class="rounded opacity-70" src="dist/img/layout1.png" alt="layout">
-                        <i class="zmdi zmdi-check"></i>
-                    </a>
-                    <a href="javascript:void(0);" class="col-6 mb-30 active">
-                        <img class="rounded opacity-70" src="dist/img/layout2.png" alt="layout">
-                        <i class="zmdi zmdi-check"></i>
-                    </a>
-                    <a href="dashboard3.html" class="col-6 mb-30">
-                        <img class="rounded opacity-70" src="dist/img/layout3.png" alt="layout">
-                        <i class="zmdi zmdi-check"></i>
-                    </a>
-                    <a href="dashboard4.html" class="col-6 mb-30">
-                        <img class="rounded opacity-70" src="dist/img/layout4.png" alt="layout">
-                        <i class="zmdi zmdi-check"></i>
-                    </a>
-                    <a href="dashboard5.html" class="col-6">
-                        <img class="rounded opacity-70" src="dist/img/layout5.png" alt="layout">
-                        <i class="zmdi zmdi-check"></i>
-                    </a>
-                </div>
-            </div>
-            <hr>
-            <h6 class="mb-5">Navigation</h6>
-            <p class="font-14">Menu comes in two modes: dark & light</p>
-            <div class="button-list hk-nav-select mb-10">
-                <button type="button" id="nav_light_select"
-                    class="btn btn-outline-light btn-sm btn-wth-icon icon-wthot-bg"><span class="icon-label"><i
-                            class="fa fa-sun-o"></i> </span><span class="btn-text">Light Mode</span></button>
-                <button type="button" id="nav_dark_select"
-                    class="btn btn-outline-primary btn-sm btn-wth-icon icon-wthot-bg"><span class="icon-label"><i
-                            class="fa fa-moon-o"></i> </span><span class="btn-text">Dark Mode</span></button>
-            </div>
-            <hr>
-            <h6 class="mb-5">Top Nav</h6>
-            <p class="font-14">Choose your liked color mode</p>
-            <div class="button-list hk-navbar-select mb-10">
-                <button type="button" id="navtop_light_select"
-                    class="btn btn-outline-light btn-sm btn-wth-icon icon-wthot-bg"><span class="icon-label"><i
-                            class="fa fa-sun-o"></i> </span><span class="btn-text">Light Mode</span></button>
-                <button type="button" id="navtop_dark_select"
-                    class="btn btn-outline-primary btn-sm btn-wth-icon icon-wthot-bg"><span class="icon-label"><i
-                            class="fa fa-moon-o"></i> </span><span class="btn-text">Dark Mode</span></button>
-            </div>
-            <hr>
-            <div class="d-flex justify-content-between align-items-center">
-                <h6>Scrollable Header</h6>
-                <div class="toggle toggle-sm toggle-simple toggle-light toggle-bg-primary scroll-nav-switch"></div>
-            </div>
-            <button id="reset_settings" class="btn btn-primary btn-block btn-reset mt-30">Reset</button>
-        </div>
+                        </ul>
+                    </li>
+                    <li><a href="#">Second Level Item</a></li>
+                    <li>
+                        <a href="#">Second Level Item</a></li>
+                    <li>
+                        <a href="#">Second Level Item</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="css_animation.html"><i class="fa fa-magic"></i> <span class="nav-label">CSS Animations </span><span class="label label-info float-right">62</span></a>
+            </li>
+            <li class="landing_link">
+                <a target="_blank" href="landing.html"><i class="fa fa-star"></i> <span class="nav-label">Landing Page</span> <span class="label label-warning float-right">NEW</span></a>
+            </li>
+            <li class="special_link">
+                <a href="package.html"><i class="fa fa-database"></i> <span class="nav-label">Package</span></a>
+            </li>
+        </ul>
+
     </div>
-    <img class="d-none" src="dist/img/logo-light.png" alt="brand" />
-    <img class="d-none" src="dist/img/logo-dark.png" alt="brand" />
-</div>
-<!-- /Setting Panel -->
+</nav>

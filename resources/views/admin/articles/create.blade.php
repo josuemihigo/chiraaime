@@ -1,70 +1,54 @@
-@extends('layoutadmin')
+@extends('layouts.appadmin')
 
 @section('content')
 
-
-
-@if(session()->get('success'))
-<div class="alert alert-success">
-    {{ session()->get('success') }}
-</div><br />
-@endif
-
-<div class="card-body">
-    @if ($errors->any())
-    <div class="alert alert-danger">
-        <ul>
-            @foreach ($errors->all() as $error)
-            <li>{{ $error }}</li>
-            @endforeach
-        </ul>
-    </div><br />
-    @endif
-</div>
-<!-- Row -->
-<form action="{{url('/articles')}}" method="post" enctype="multipart/form-data">
-    @csrf
-    <div class="form-group">
-        <div class="row">
-            <div class="col-sm">
-                <input type="file" id="input-file-now" class="dropify" name="img" @error('img') is-invalid @enderror"
-                    id="validateCustomFile" />
-            </div>
-        </div>
-        @error('img')
-        <div class="invalid-feedback" role="alert">
-            <strong>{{ $message }}</strong>
-        </div>
-        @enderror
+<div class="ibox">
+    <div class="ibox-title">
+        <h5>Wizard with Validation</h5>
     </div>
-
-    <div class="form-group">
-        <div class="input-group">
-            <div class="input-group-prepend">
-                <span class="input-group-text" id="basic-addon1">Titre</span>
+    <div class="ibox-content">
+        <h2>
+            Validation Wizard Form
+        </h2>
+        <p>
+            This example show how to use Steps with jQuery Validation plugin.
+        </p>
+        <div class="content clearfix">
+            <h1 id="form-h-0" tabindex="-1" class="title current">Account</h1>
+            <fieldset id="form-p-0" role="tabpanel" aria-labelledby="form-h-0" class="body current" aria-hidden="false">
+                <h2>Account Information</h2>
+                <div class="row">
+                    <div class="col-lg-8">
+                        <div class="form-group">
+                            <label>Username *</label>
+                            <input id="userName" name="userName" type="text" class="form-control required" aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label>Password *</label>
+                            <input id="password" name="password" type="text" class="form-control required" aria-required="true">
+                        </div>
+                        <div class="form-group">
+                            <label>Confirm Password *</label>
+                            <input id="confirm" name="confirm" type="text" class="form-control required" aria-required="true">
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="text-center">
+                            <div style="margin-top: 20px">
+                                <i class="fa fa-sign-in" style="font-size: 180px;color: #e5e5e5 "></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+        <div class="ibox-footer">
+            <div class="form-group row">
+                <div class="col-sm-4 col-sm-offset-2">
+                    <button class="btn btn-white btn-sm" type="submit">Cancel</button>
+                    <button class="btn btn-primary btn-sm" type="submit">Save changes</button>
+                </div>
             </div>
-            <input type="text" class="form-control @error('titre') is-invalid @enderror" placeholder="Titre"
-                aria-label="Username" aria-describedby="basic-addon1" name="titre">
-            @error('titre')
-            <div class="invalid-feedback" role="alert">
-                <strong>{{ $message }}</strong>
-            </div>
-            @enderror
-        </div>
-
-    </div>
-
-    <div class="form-group">
-        <div class="">
-            <textarea class="form-control @error('content') is-invalid @enderror" name="content"></textarea>
-            @error('content')
-            <div class="invalid-feedback" role="alert">
-                <strong>{{ $message }}</strong>
-            </div>
-            @enderror
         </div>
     </div>
-    <button class="btn btn-primary" type="submit">Enregister </button>
-</form>
-
 @endsection

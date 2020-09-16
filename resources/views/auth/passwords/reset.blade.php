@@ -1,10 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
+        <div class="middle-box text-center loginscreen animated fadeInDown">
+                <div>
+
+                    <h1 class="logo-name">IN+</h1>
+
+                </div>
+                <h3>Welcome to IN+</h3>
                 <div class="card-header">{{ __('Reset Password') }}</div>
 
                 <div class="card-body">
